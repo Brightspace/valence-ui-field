@@ -1,8 +1,14 @@
-.vui-field {
+.vui-field-row {
 	border: none;
 	display: block;
 	min-height: 13px;
-	margin: 0 0 20px 0;
+	margin-bottom: 20px;
+}
+fieldset.vui-field-row,
+.vui-field-row fieldset {
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
 	padding: 0;
 }
 
@@ -20,6 +26,15 @@
 }
 [dir="rtl"] .vui-label {
 	text-align: right;
+}
+
+.vui-field-beside .vui-label {
+	margin-bottom: 0;
+	padding-top: 4px;
+	text-align: right;
+}
+[dir="rtl"] .vui-field-beside .vui-label {
+	text-align: left;
 }
 
 .vui-required:after {
