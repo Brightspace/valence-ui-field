@@ -1,11 +1,19 @@
 .vui-field-row {
-	border: none;
 	display: block;
 	min-height: 13px;
 	margin-bottom: 20px;
 }
+.vui-field-row:after {
+	clear: both;
+}
+.vui-field-row:before,
+.vui-field-row:after {
+	content: " ";
+	display: table;
+}
 fieldset.vui-field-row,
 .vui-field-row fieldset {
+	border: none;
 	margin-top: 0;
 	margin-right: 0;
 	margin-left: 0;
