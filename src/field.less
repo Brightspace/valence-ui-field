@@ -1,0 +1,24 @@
+.vui-field-row() {
+	display: block;
+	min-height: 13px;
+	margin-bottom: 20px;
+
+	&:after {
+		clear: both;
+	}
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	fieldset&,
+	& fieldset {
+		border: none;
+		margin-top: 0;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0;
+	}
+}
