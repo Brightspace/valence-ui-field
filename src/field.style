@@ -1,50 +1,15 @@
-@labelColour: #6b6b6b;
+@import "field.less";
+@import "label.less";
+@import "required.less";
 
 .vui-field-row {
-	display: block;
-	min-height: 13px;
-	margin-bottom: 20px;
-}
-.vui-field-row:after {
-	clear: both;
-}
-.vui-field-row:before,
-.vui-field-row:after {
-	content: " ";
-	display: table;
-}
-fieldset.vui-field-row,
-.vui-field-row fieldset {
-	border: none;
-	margin-top: 0;
-	margin-right: 0;
-	margin-left: 0;
-	padding: 0;
+	.vui-field-row();
 }
 
 .vui-label {
-	border: none;
-	color: @labelColour;
-	cursor: default;
-	display: block;
-	font-size: inherit;
-	font-weight: bold;
-	line-height: inherit;
-	margin: 0 0 5px 0;
-	padding: 0;
-	text-align: left;
-	text-shadow: 0 1px 0 #ffffff;
-}
-[dir="rtl"] .vui-label {
-	text-align: right;
+	.vui-label();
 }
 
-.vui-required:after {
-	content: data-uri('image/png;base64','required.png');
-	left: 3px;
-	position: relative;
-	top: -2px;
-}
-[dir="rtl"] .vui-required:after {
-	right: 3px;
+.vui-required {
+	.vui-required();
 }

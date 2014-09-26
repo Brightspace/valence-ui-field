@@ -1,50 +1,24 @@
-@import '../../core/core';
-
-.vui-field-row {
+.vui-field-row() {
 	display: block;
 	min-height: 13px;
 	margin-bottom: 20px;
-}
-.vui-field-row:after {
-	clear: both;
-}
-.vui-field-row:before,
-.vui-field-row:after {
-	content: " ";
-	display: table;
-}
-fieldset.vui-field-row,
-.vui-field-row fieldset {
-	border: none;
-	margin-top: 0;
-	margin-right: 0;
-	margin-left: 0;
-	padding: 0;
-}
 
-.vui-label {
-	border: none;
-	color: @labelColour;
-	cursor: default;
-	display: block;
-	font-size: inherit;
-	font-weight: bold;
-	line-height: inherit;
-	margin: 0 0 5px 0;
-	padding: 0;
-	text-align: left;
-	text-shadow: 0px 1px 0px #ffffff;
-}
-[dir="rtl"] .vui-label {
-	text-align: right;
-}
+	&:after {
+		clear: both;
+	}
 
-.vui-required:after {
-	content: data-uri('image/png;base64','controls/field/required.png');
-	left: 3px;
-	position: relative;
-	top: -2px;
-}
-[dir="rtl"] .vui-required:after {
-	right: 3px;
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	fieldset&,
+	& fieldset {
+		border: none;
+		margin-top: 0;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0;
+	}
 }

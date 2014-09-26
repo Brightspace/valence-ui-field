@@ -1,0 +1,13 @@
+.vui-required() {
+
+	&:after {
+		content: data-uri('image/png;base64','required.png');
+		left: 3px;
+		position: relative;
+		top: -2px;
+	}
+
+	[dir="rtl"] &:after {
+		right: 3px;
+	}
+}
