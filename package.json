@@ -11,5 +11,10 @@
   "devDependencies": {
     "gulp": "^3.8.8",
     "vui-helpers": "0.0.2"
-  }
+  },
+  "keywords": [
+    "d2l",
+    "valence-ui",
+    "vui"
+  ]
 }
