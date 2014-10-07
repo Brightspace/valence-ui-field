@@ -2,14 +2,19 @@
   "name": "vui-field",
   "description": "Valence.UI field control",
   "version": "0.0.0",
-  "author": "D2L Incorporated",
+  "author": "D2L Corporation",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.dev.d2l:7999/val/field.git"
+    "url": "https://github.com/Desire2Learn-Valence/valence-ui-field.git"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
     "vui-helpers": "0.1.0"
-  }
+  },
+  "keywords": [
+    "d2l",
+    "valence-ui",
+    "vui"
+  ]
 }
