@@ -1,0 +1,44 @@
+.vui-field-row {
+  display: block;
+  min-height: 13px;
+  margin-bottom: 20px;
+}
+.vui-field-row:after {
+  clear: both;
+}
+.vui-field-row:before,
+.vui-field-row:after {
+  content: " ";
+  display: table;
+}
+fieldset.vui-field-row,
+.vui-field-row fieldset {
+  border: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.vui-label {
+  border: none;
+  color: #6b6b6b;
+  cursor: default;
+  display: block;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-align: left;
+  text-shadow: 0 1px 0 #ffffff;
+}
+[dir="rtl"] .vui-label {
+  text-align: right;
+}
+.vui-required:after {
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH3QoeEyMPqHTqhQAAAAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdodACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAALdEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAHklEQVQI12P4//8/AxgzgCgIG8FBohGqYBi/SjQzASj3P8GI6jCKAAAAAElFTkSuQmCC");
+  left: 3px;
+  position: relative;
+  top: -2px;
+}
+[dir="rtl"] .vui-required:after {
+  right: 3px;
+}
