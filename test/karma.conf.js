@@ -4,7 +4,7 @@ module.exports = function( config ) {
 	config.set( {
 		autoWatch: false,
 		basePath: '../',
-		browsers: ['PhantomJS', 'Chrome', 'Firefox', 'Safari'],
+		browsers: ['PhantomJS'],
 		exclude: [],
 		frameworks: ['jasmine'],
 		junitReporter : {
@@ -12,11 +12,8 @@ module.exports = function( config ) {
 			suite: 'unit'
 		},
 		plugins : [
-			'karma-chrome-launcher',
 			'karma-jasmine',
 			'karma-junit-reporter',
-			'karma-firefox-launcher',
-			'karma-safari-launcher',			
 			'karma-phantomjs-launcher',
 			'karma-script-launcher'
 		],
