@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/Desire2Learn-Valence/valence-ui-field.git"
   },
+  "scripts": {
+    "test": "gulp && gulp test"
+  },
   "devDependencies": {
     "gulp": "^3.8.8",
     "vui-helpers": "~0.1.2"
