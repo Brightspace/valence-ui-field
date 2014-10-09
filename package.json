@@ -1,7 +1,7 @@
 {
   "name": "vui-field",
-  "description": "Valence.UI field control",
-  "version": "0.0.0",
+  "description": "LESS mixins and CSS for applying field styles",
+  "version": "0.0.2",
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "repository": {
