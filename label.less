@@ -1,24 +1,23 @@
+@vui-labelColour: #6b6b6b;
 
-@labelColour: #6b6b6b;
+#vui {
+	.label(
+			@colour : @vui-labelColour
+		) {
+		border: none;
+		color: @colour;
+		cursor: default;
+		display: block;
+		font-size: inherit;
+		font-weight: bold;
+		line-height: inherit;
+		margin: 0 0 5px 0;
+		padding: 0;
+		text-align: left;
+		text-shadow: 0 1px 0 #ffffff;
 
-.vui-label(
-		@colour : @labelColour
-	) {
-	border: none;
-	color: @colour;
-	cursor: default;
-	display: block;
-	font-size: inherit;
-	font-weight: bold;
-	line-height: inherit;
-	margin: 0 0 5px 0;
-	padding: 0;
-	text-align: left;
-	text-shadow: 0 1px 0 #ffffff;
-
-	[dir="rtl"] & {
-		text-align: right;
+		[dir="rtl"] & {
+			text-align: right;
+		}
 	}
 }
-
-
