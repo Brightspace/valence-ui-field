@@ -1,22 +1,23 @@
-.vui-field-row() {
-	display: block;
-	min-height: 13px;
-	margin-bottom: 20px;
+#vui {
+	.field-row() {
+		display: block;
+		min-height: 13px;
+		margin-bottom: 20px;
 
-	&:after {
-		clear: both;
-	}
+		&:after {
+			clear: both;
+		}
 
-	&:before,
-	&:after {
-		content: " ";
-		display: table;
-	}
+		&:before,
+		&:after {
+			content: " ";
+			display: table;
+		}
 
-	fieldset&,
-	& fieldset {
-		border: none;
-		margin: 0 0 20px 0;
-		padding: 0;
+		& fieldset {
+			border: none;
+			margin: 0 0 20px 0;
+			padding: 0;
+		}
 	}
 }
