@@ -1,8 +1,10 @@
 #vui {
 	.field-row() {
+		border: none;
 		display: block;
 		min-height: 13px;
-		margin-bottom: 20px;
+		margin: 0 0 20px 0;
+		padding: 0;
 
 		&:after {
 			clear: both;
@@ -12,12 +14,6 @@
 		&:after {
 			content: " ";
 			display: table;
-		}
-
-		& fieldset {
-			border: none;
-			margin: 0 0 20px 0;
-			padding: 0;
 		}
 	}
 }
