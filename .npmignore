@@ -1,6 +1,7 @@
 .gitattributes
 .gitignore
 .npmignore
+.editorconfig
 node_modules
 test
 gulpfile.js

@@ -13,7 +13,7 @@ npm install --save-dev vui-field
 
 ##Fields
 
-Form fields (checkboxes, text inputs, etc.) can be grouped using the 
+Form fields (checkboxes, text inputs, etc.) can be grouped using the
 `vui-field-row` mixin. This would typically be applied to a `div`
 (or other element) used to surround each field.
 
@@ -72,7 +72,7 @@ Always provide a unique label for every form element. This enables assistive
 technology (such as screen readers) to properly interpret your forms. If space
 is tight, you can hide the label by
 [moving it offscreen](http://webaim.org/techniques/css/invisiblecontent/).
-[Techniques for WCAG 2.0: Using label elements to associate text labels with 
+[Techniques for WCAG 2.0: Using label elements to associate text labels with
 form controls...](http://www.w3.org/TR/WCAG-TECHS/H44.html)
 
 ##Required Fields
@@ -107,7 +107,7 @@ The alternate CSS method uses the `vui-required` class:
 ###Make required fields accessible
 
 It's important to note that this is a purely visual flag -- be sure to
-additionally mark up the corresponding input with the [HTML5 `required` 
+additionally mark up the corresponding input with the [HTML5 `required`
 attribute](http://www.w3.org/html/wg/drafts/html/master/forms.html#the-required-attribute)
 and/or the [`aria-required` attribute](http://www.w3.org/TR/wai-aria/states_and_properties#aria-required).
 [MDN: Using the aria-required attribute...](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_attribute)
@@ -179,3 +179,9 @@ To test using Karma:
 ```shell
 gulp test
 ```
+
+## Contributing
+
+### Code Style
+
+This repository is configured with [EditorConfig](http://editorconfig.org) rules and contributions should make use of them. See the valence-ui [Code Style wiki page](https://github.com/Desire2Learn-Valence/valence-ui-helpers/wiki/Code-Style) for details.
