@@ -1,3 +1,5 @@
+deplui.sublime-project
+deplui.sublime-workspace
 node_modules/
-dist/
+test/output
 field.css
