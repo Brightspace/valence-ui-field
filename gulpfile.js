@@ -1,15 +1,15 @@
 var gulp = require( 'gulp' ),
+	del = require( 'del' ),
 	vui = require( 'vui-helpers' );
 
-gulp.task( 'clean', function() {
-	return gulp.src( [ 'dist/**/*', 'test/output' ] )
-		.pipe( vui.clean() );
+gulp.task( 'clean', function( cb ) {
+	del([ 'field.css' ], cb);
 } );
 
 gulp.task( 'css', function () {
-	return vui.makeCss( 
+	return vui.makeCss(
 		'field.css.less',
-		'field.css', 
+		'field.css',
 		{ 'lintOpts' : '.csslintrc'	}
 	);
 } );
@@ -19,9 +19,10 @@ gulp.task( 'default', [ 'clean' ], function() {
 } );
 
 gulp.task( 'test', function () {
-	return vui.test(
-			'test/karma.conf.js',
+	return vui.test( {
+		files: [
 			'test/**/*Spec.js',
-			'*.css'
-		);
+			'field.css'
+		]
+	} ) ;
 } );
