@@ -44,9 +44,11 @@
 		var elem;
 
 		beforeEach( function () {
+
+			jasmine.addMatchers( vui.jasmine.dom.matchers );
+
 			container = document.createElement("div");
 			document.body.appendChild(container);
-			jasmine.addMatchers(d2l.jasmine.matchers);
 			elem = elemConstructor(container);
 		});
 
@@ -61,7 +63,7 @@
 		it( 'has correct width', function() {
 			document.body.style.width="1000px";
 			expect( elem.clientWidth ).toBe( 1000 );
-			expect( elem.offsetWidth ).toBe( 1000 );	
+			expect( elem.offsetWidth ).toBe( 1000 );
 		} );
 
 		it( 'has correct height', function() {
@@ -72,7 +74,7 @@
 			} else {
 				expect( elem.clientHeight ).toBe( 45 );
 				expect( elem.offsetHeight ).toBe( 45 );
-			}				
+			}
 		} );
 
 		it( 'has correct margins', function() {
@@ -96,10 +98,13 @@
 		var container;
 
 		beforeEach( function () {
+
+			jasmine.addMatchers( vui.jasmine.dom.matchers );
+
 			container = document.createElement("div");
 			document.body.appendChild(container);
-			jasmine.addMatchers(d2l.jasmine.matchers);
 			elem = elemConstructor(container);
+
 		});
 
 		it( 'has correct colour', function () {
@@ -132,7 +137,7 @@
 
 		it( 'has line height', function() {
 			expect( elem ).toHaveLineHeight( '20px' );
-		});	
+		});
 
 		it( 'has correct margins', function() {
 			expect( elem ).toHaveBottomMargin( '5px' );
@@ -163,7 +168,7 @@
 	describe( 'vui-field-row', function() {
 
 		describe ( 'divs', function() {
-			verifyFieldStyles( 
+			verifyFieldStyles(
 				function (container) {
 					return addVUIField( "div", "label", container );
 				}
@@ -171,7 +176,7 @@
 		} );
 
 		describe ( 'fieldsets', function() {
-			verifyFieldStyles( 
+			verifyFieldStyles(
 				function (container) {
 					return addVUIField( "fieldset", "legend", container );
 				}
@@ -179,7 +184,7 @@
 		} );
 
 		describe ( 'child fieldsets', function() {
-			verifyFieldStyles( 
+			verifyFieldStyles(
 				function (container) {
 					return addVUIChildField( "div", "fieldset", "legend", container );
 				}
@@ -190,7 +195,7 @@
 		describe ( 'right to left', function() {
 
 			describe ( 'divs', function() {
-				verifyFieldStyles( 
+				verifyFieldStyles(
 					function (container) {
 						container.dir = "rtl";
 						return addVUIField( "div", "label", container );
@@ -199,7 +204,7 @@
 			} );
 
 			describe ( 'fieldsets', function() {
-				verifyFieldStyles( 
+				verifyFieldStyles(
 					function (container) {
 						container.dir = "rtl";
 						return addVUIField( "fieldset", "legend", container );
@@ -208,7 +213,7 @@
 			} );
 
 			describe ( 'child fieldsets', function() {
-				verifyFieldStyles( 
+				verifyFieldStyles(
 					function (container) {
 						container.dir = "rtl";
 						return addVUIChildField( "div", "fieldset", "legend", container );
@@ -222,7 +227,7 @@
 
 	describe( 'vui-label', function() {
 		describe( 'label', function() {
-			verifyLabelStyles( 
+			verifyLabelStyles(
 				function (container) {
 					return addVUIChildLabel( "label", "div", container );
 				}
@@ -230,7 +235,7 @@
 		} );
 
 		describe( 'legend', function() {
-			verifyLabelStyles( 
+			verifyLabelStyles(
 				function (container) {
 					return addVUIChildLabel( "legend", "fieldset", container );
 				}
@@ -240,7 +245,7 @@
 		describe ( 'right to left', function() {
 
 			describe( 'label', function() {
-				verifyLabelStyles( 
+				verifyLabelStyles(
 					function (container) {
 						container.dir = "rtl";
 						return addVUIChildLabel( "label", "div", container );
@@ -249,7 +254,7 @@
 			} );
 
 			describe( 'legend', function() {
-				verifyLabelStyles( 
+				verifyLabelStyles(
 					function (container) {
 						container.dir = "rtl";
 						return addVUIChildLabel( "legend", "fieldset", container );
