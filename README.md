@@ -9,7 +9,7 @@ style fields and labels.
 [npm-url]: https://www.npmjs.org/package/vui-field
 [npm-image]: https://img.shields.io/npm/v/vui-field.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-field
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-field.svg
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-field.svg?branch=master
 [dependencies-url]: https://david-dm.org/brightspace/valence-ui-field
 [dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-field.svg
 
