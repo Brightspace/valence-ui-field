@@ -6,6 +6,8 @@
 This library contains a series of LESS mixins and CSS which can be used to
 style fields and labels.
 
+For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+
 [npm-url]: https://www.npmjs.org/package/vui-field
 [npm-image]: https://img.shields.io/npm/v/vui-field.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-field
