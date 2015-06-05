@@ -1,0 +1,19 @@
+
+@import "field";
+@import "label";
+
+.vui-field-row {
+	@include vui-field-row();
+}
+
+.vui-field-row fieldset {
+	@include vui-field-row();
+}
+
+.vui-label {
+	@include vui-label();
+}
+
+.vui-required {
+	@include vui-label-required();
+}

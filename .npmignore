@@ -1,8 +1,11 @@
+.editorconfig
 .gitattributes
 .gitignore
 .npmignore
-.editorconfig
+.travis.yml
 node_modules
+karma.conf.js
 test
-gulpfile.js
 field.css.less
+field.css.scss
+field-less.css

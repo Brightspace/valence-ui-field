@@ -3,8 +3,8 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This library contains a series of LESS mixins and CSS which can be used to
-style fields and labels.
+This library contains a series of Sass mixins and CSS which can be used to
+style fields and labels. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version.
 
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
