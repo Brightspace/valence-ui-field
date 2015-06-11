@@ -1,0 +1,61 @@
+===================================================================
+--- field-less.css
++++ field.css
+@@ -4,31 +4,37 @@
+   min-height: 13px;
+   margin: 0 0 20px 0;
+   padding: 0;
+ }
++
+ .vui-field-row:after {
+   clear: both;
+ }
++
+ .vui-field-row:before,
+ .vui-field-row:after {
+   content: " ";
+   display: table;
+ }
++
+ .vui-field-row fieldset {
+   border: none;
+   display: block;
+   min-height: 13px;
+   margin: 0 0 20px 0;
+   padding: 0;
+ }
++
+ .vui-field-row fieldset:after {
+   clear: both;
+ }
++
+ .vui-field-row fieldset:before,
+ .vui-field-row fieldset:after {
+   content: " ";
+   display: table;
+ }
++
+ .vui-label {
+   border: none;
+   color: #6b6b6b;
+   cursor: default;
+@@ -40,16 +46,19 @@
+   padding: 0;
+   text-align: left;
+   text-shadow: 0 1px 0 #ffffff;
+ }
++
+ [dir="rtl"] .vui-label {
+   text-align: right;
+ }
++
+ .vui-required:after {
+   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFAQMAAAC3obSmAAAABlBMVEX/////AADrWueTAAAAAXRSTlMAQObYZgAAABBJREFUCNdjUGBYwVAAxAoACgoCAWrZ6OUAAAAASUVORK5CYII=");
+   left: 3px;
+   position: relative;
+   top: -2px;
+ }
++
+ [dir="rtl"] .vui-required:after {
+   right: 3px;
+ }
