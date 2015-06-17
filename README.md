@@ -4,7 +4,7 @@
 [![Dependency Status][dependencies-image]][dependencies-url]
 
 This component contains Sass mixins and CSS which can be used to
-style fields and labels. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version.
+style fields and labels.
 
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 

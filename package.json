@@ -1,22 +1,13 @@
 {
   "name": "vui-field",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Mixins and CSS for applying field styles",
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean",
-    "build": "npm run build:sass:css && npm run build:less:css",
-    "prebuild:less:css": "imgtoless -p vui- -o field-icons.less *.png",
-    "build:less:css": "lessc field.css.less > field-less.css",
-    "postbuild:less:css": "csslint field-less.css",
-    "prebuild:sass:css": "imgtoscss -p vui- -o field-icons.scss *.png",
-    "build:sass:css": "node-sass --output-style expanded field.css.scss field.css",
-    "postbuild:sass:css": "csslint field.css",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o field-icons.scss *.png",
+    "build": "node-sass --output-style expanded field.css.scss field.css",
     "pretest": "npm run build",
-    "test": "npm run diff:assert && karma start karma.conf.js",
-    "prediff:assert": "npm run diff:create",
-    "diff:assert": "assertnodiff --file1 ./test/diff/less-scss-diff --file2 ./test/diff/less-scss-diff-new",
-    "diff:create": "createpatch --file1 field-less.css --file2 field.css -o ./test/diff/less-scss-diff-new"
+    "test": "csslint field.css && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -35,14 +26,12 @@
   "homepage": "https://github.com/Brightspace/valence-ui-field",
   "devDependencies": {
     "csslint": "^0.10.0",
-    "diff-cli": "git://github.com/Brightspace/diff-cli.git#v0.0.1",
     "images-to-variables": "^0.2.1",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-jasmine": "^0.3.5",
     "karma-cli": "0.0.4",
-    "less": "^2.5.1",
     "node-sass": "^3.1.1",
     "rimraf": "^2.3.4"
   }

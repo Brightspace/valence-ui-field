@@ -6,6 +6,4 @@
 node_modules
 karma.conf.js
 test
-field.css.less
 field.css.scss
-field-less.css
