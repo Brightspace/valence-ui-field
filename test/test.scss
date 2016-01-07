@@ -28,11 +28,6 @@ body {
 .grid-span-horizontal-label,
 .grid-span-inline-label {
 	@include vui-gs-span(2);
-	/* TODO: this should be handled by an inline-label mixin */
-	> .label {
-		text-align: right;
-		width: 100%;
-	}
 }
 .grid-span-inline-input1 {
 	@include vui-gs-span(4);
@@ -50,6 +45,9 @@ body {
 
 .label {
 	@include vui-label();
+}
+.label-inline {
+	@include vui-label-inline();
 }
 .required {
 	@include vui-label-required();

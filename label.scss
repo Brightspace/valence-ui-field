@@ -1,12 +1,26 @@
 @import 'bower_components/vui-colors/colors.scss';
 
-@mixin vui-label() {
+@mixin _vui-label-helper() {
 	color: $vui-color-ferrite;
 	cursor: default;
 	display: block;
 	font-size: 0.7rem;
-	margin-bottom: 0.75rem;
+	line-height: 0.7rem;
 	width: 100%;
+}
+
+@mixin vui-label() {
+	@include _vui-label-helper();
+	margin-bottom: 0.75rem;
+}
+
+@mixin vui-label-inline() {
+	@include _vui-label-helper();
+	margin-top: 0.7rem;
+	text-align: right;
+	[dir='rtl'] & {
+		text-align: left;
+	}
 }
 
 @mixin vui-label-required() {
