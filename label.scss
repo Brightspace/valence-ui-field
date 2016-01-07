@@ -1,28 +1,12 @@
+@import 'bower_components/vui-colors/colors.scss';
 
-@import 'field-icons.scss';
-
-$vui-label-color: #6b6b6b !default;
-
-@mixin vui-label(
-		$color: $vui-label-color
-	) {
-
-	border: none;
-	color: $color;
+@mixin vui-label() {
+	color: $vui-color-ferrite;
 	cursor: default;
 	display: block;
-	font-size: inherit;
-	font-weight: bold;
-	line-height: inherit;
-	margin: 0 0 5px 0;
-	padding: 0;
-	text-align: left;
-	text-shadow: 0 1px 0 #ffffff;
-
-	[dir="rtl"] & {
-		text-align: right;
-	}
-
+	font-size: 0.7rem;
+	margin-bottom: 0.75rem;
+	width: 100%;
 }
 
 @mixin vui-label-required() {
