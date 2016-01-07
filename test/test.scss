@@ -1,0 +1,65 @@
+@import '../field.scss';
+@import '../label.scss';
+@import '../node_modules/vui-grid-system/grid-system.scss';
+@import '../node_modules/vui-input/input.scss';
+@import '../node_modules/vui-input/input-radio.scss';
+@import '../node_modules/vui-input/textarea.scss';
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,300';
+
+html {
+	font-size: 20px;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 1rem;
+}
+
+.grid-container {
+	@include vui-gs-container();
+}
+.grid-row {
+	@include vui-gs-row();
+}
+.grid-span-stacked-label,
+.grid-span-stacked-input {
+	@include vui-gs-span(6 break);
+}
+.grid-span-horizontal-label,
+.grid-span-inline-label {
+	@include vui-gs-span(2);
+	/* TODO: this should be handled by an inline-label mixin */
+	> .label {
+		text-align: right;
+		width: 100%;
+	}
+}
+.grid-span-inline-input1 {
+	@include vui-gs-span(4);
+}
+.grid-span-inline-input2 {
+	@include vui-gs-span(last 4);
+}
+.grid-span-horizontal-input {
+	@include vui-gs-span(4);
+}
+
+.field-row {
+	@include vui-field-row();
+}
+
+.label {
+	@include vui-label();
+}
+label.radio-label {
+	@include vui-input-radio-label();
+}
+input[type="text"] {
+	@include vui-input();
+}
+input[type="radio"] {
+	@include vui-input-radio();
+}
+textarea {
+	@include vui-input-textarea();
+}

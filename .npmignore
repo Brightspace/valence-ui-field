@@ -4,6 +4,5 @@
 .npmignore
 .travis.yml
 node_modules
-karma.conf.js
 test
-field.css.scss
+postcss.config.json

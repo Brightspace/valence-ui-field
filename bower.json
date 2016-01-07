@@ -9,7 +9,7 @@
     ".gitignore",
     ".npmignore",
     ".travis.yml",
-    "karma.conf.js",
-    "package.json"
+    "package.json",
+    "postcss.config.json"
   ]
 }

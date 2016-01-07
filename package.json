@@ -3,11 +3,19 @@
   "version": "0.6.1",
   "description": "Mixins and CSS for applying field styles",
   "scripts": {
-    "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o field-icons.scss *.png",
-    "build": "node-sass --output-style expanded field.css.scss field.css",
+    "autoprefix": "postcss -c postcss.config.json",
+    "autoprefix:test": "postcss -c ./test/postcss.config.json",
+    "clean": "rimraf *.css && rimraf ./test/*.css",
+    "prebuild": "npm run clean && npm run build:sass:icons",
+    "build": "npm run build:sass && npm run build:sass:test",
+    "build:sass": "node-sass --output-style expanded field.css.scss field.css",
+    "postbuild:sass": "npm run autoprefix",
+    "build:sass:icons": "imgtoscss -p vui- -o field-icons.scss *.png",
+    "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
+    "postbuild:sass:test": "npm run autoprefix:test",
+    "postinstall": "./node_modules/.bin/bower install",
     "pretest": "npm run build",
-    "test": "csslint field.css && karma start karma.conf.js"
+    "test": "csslint field.css"
   },
   "repository": {
     "type": "git",
@@ -24,15 +32,18 @@
     "url": "https://github.com/Brightspace/valence-ui-field/issues"
   },
   "homepage": "https://github.com/Brightspace/valence-ui-field",
+  "dependencies": {
+    "bower": "^1.7.2"
+  },
   "devDependencies": {
+    "autoprefixer": "^6.2.3",
+    "cpy": "^4.0.0",
     "csslint": "^0.10.0",
-    "images-to-variables": "^0.2.1",
-    "jasmine-dom-matchers": "^0.1.0",
-    "karma": "^0.12.32",
-    "karma-phantomjs-launcher": "^0.1.4",
-    "karma-jasmine": "^0.3.5",
-    "karma-cli": "0.0.4",
-    "node-sass": "^3.1.1",
-    "rimraf": "^2.3.4"
+    "images-to-variables": "^0.3.0",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.3.3",
+    "rimraf": "^2.5.0",
+    "vui-input": "^1.3.0",
+    "vui-grid-system": "^0.0.1"
   }
 }

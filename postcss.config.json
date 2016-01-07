@@ -1,0 +1,8 @@
+{
+	"use": ["autoprefixer"],
+	"input": "field.css",
+	"output": "field.css",
+	"autoprefixer": {
+		"browsers": "Last 4 versions, Firefox ESR, IE >= 9, Safari >= 6"
+	}
+}
