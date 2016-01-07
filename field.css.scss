@@ -1,6 +1,5 @@
-
-@import "field";
-@import "label";
+@import "field.scss";
+@import "label.scss";
 
 .vui-field-row {
 	@include vui-field-row();

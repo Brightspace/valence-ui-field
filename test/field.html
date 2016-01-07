@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Field Test</title>
+		<link rel="stylesheet" type="text/css" href="test.css" />
+	</head>
+	<body>
+		<div class="grid-container">
+			<h2>Stacked</h2>
+			<div class="field-row">
+				<div class="grid-span-stacked-label">
+					<label class="label" for="stacked-name">Name</label>
+				</div>
+				<div class="grid-span-stacked-input">
+					<input type="text" id="stacked-name" />
+				</div>
+			</div>
+			<div class="field-row">
+				<div class="grid-span-stacked-label">
+					<label class="label" for="stacked-description">Description</label>
+				</div>
+				<div class="grid-span-stacked-input">
+					<textarea id="stacked-description"></textarea>
+				</div>
+			</div>
+			<fieldset class="field-row">
+				<div class="grid-span-stacked-label">
+					<legend class="label">Enabled</legend>
+				</div>
+				<div class="grid-span-stacked-input">
+					<label class="radio-label">
+						<input type="radio" name="stacked-enabled" checked />
+						Yes
+					</label><br />
+					<label class="radio-label">
+						<input type="radio" name="stacked-enabled" />
+						No
+					</label>
+				</div>
+			</fieldset>
+			<h2>Horizontal</h2>
+			<div class="field-row grid-row">
+				<div class="grid-span-horizontal-label">
+					<label class="label" for="horizontal-name">Name</label>
+				</div>
+				<div class="grid-span-horizontal-input">
+					<input type="text" id="horizontal-name" />
+				</div>
+			</div>
+			<div class="field-row grid-row">
+				<div class="grid-span-horizontal-label">
+					<label class="label" for="horizontal-description">Description</label>
+				</div>
+				<div class="grid-span-horizontal-input">
+					<textarea id="horizontal-description"></textarea>
+				</div>
+			</div>
+			<fieldset class="field-row grid-row">
+				<div class="grid-span-horizontal-label">
+					<legend class="label">Enabled</legend>
+				</div>
+				<div class="grid-span-horizontal-input">
+					<label class="radio-label">
+						<input type="radio" name="horizontal-enabled" checked />
+						Yes
+					</label><br />
+					<label class="radio-label">
+						<input type="radio" name="horizontal-enabled" />
+						No
+					</label>
+				</div>
+			</fieldset>
+			<h2>Inline</h2>
+			<div class="field-row grid-row">
+				<div class="grid-span-inline-label">
+					<label class="label" for="inline-first-name">First Name</label>
+				</div>
+				<div class="grid-span-inline-input1">
+					<input type="text" id="inline-first-name" />
+				</div>
+				<div class="grid-span-inline-label">
+					<label class="label" for="inline-last-name">Last Name</label>
+				</div>
+				<div class="grid-span-inline-input2">
+					<input type="text" id="inline-last-name" />
+				</div>
+			</div>
+			<div class="field-row grid-row">
+				<div class="grid-span-inline-label">
+					<label class="label" for="inline-city">City</label>
+				</div>
+				<div class="grid-span-inline-input1">
+					<input type="text" id="inline-city" />
+				</div>
+				<div class="grid-span-inline-label">
+					<label class="label" for="inline-postal-code">Postal Code</label>
+				</div>
+				<div class="grid-span-inline-input2">
+					<input type="text" id="inline-postal-code" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
