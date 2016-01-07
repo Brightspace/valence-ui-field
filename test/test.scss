@@ -51,6 +51,9 @@ body {
 .label {
 	@include vui-label();
 }
+.required {
+	@include vui-label-required();
+}
 label.radio-label {
 	@include vui-input-radio-label();
 }
