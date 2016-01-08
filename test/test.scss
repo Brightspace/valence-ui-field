@@ -25,7 +25,6 @@ body {
 .grid-span-stacked-input {
 	@include vui-gs-span(6 break);
 }
-.grid-span-horizontal-label,
 .grid-span-inline-label {
 	@include vui-gs-span(2);
 }
@@ -35,7 +34,7 @@ body {
 .grid-span-inline-input2 {
 	@include vui-gs-span(last 4);
 }
-.grid-span-horizontal-input {
+.grid-span-inline-input {
 	@include vui-gs-span(4);
 }
 
