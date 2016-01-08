@@ -1,10 +1,10 @@
+@import 'bower_components/vui-colors/colors.scss';
 
 @mixin vui-field-row() {
 
 	border: none;
 	display: block;
-	min-height: 13px;
-	margin: 0 0 20px 0;
+	margin: 0 0 1.5rem 0;
 	padding: 0;
 
 	&:after {
@@ -15,6 +15,38 @@
 	&:after {
 		content: " ";
 		display: table;
+	}
+
+}
+
+@mixin _vui-field-label-helper() {
+	color: $vui-color-ferrite;
+	cursor: default;
+	display: block;
+	font-size: 0.7rem;
+	line-height: 0.7rem;
+	width: 100%;
+}
+
+@mixin vui-field-label() {
+	@include _vui-field-label-helper();
+	margin-bottom: 0.75rem;
+}
+
+@mixin vui-field-label-inline() {
+	@include _vui-field-label-helper();
+	margin-top: 0.7rem;
+	text-align: right;
+	[dir='rtl'] & {
+		text-align: left;
+	}
+}
+
+@mixin vui-field-label-required() {
+
+	&:after {
+		content: '*';
+		position: relative;
 	}
 
 }

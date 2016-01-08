@@ -1,5 +1,4 @@
 @import '../field.scss';
-@import '../label.scss';
 @import '../node_modules/vui-grid-system/grid-system.scss';
 @import '../node_modules/vui-input/input.scss';
 @import '../node_modules/vui-input/input-radio.scss';
@@ -43,13 +42,13 @@ body {
 }
 
 .label {
-	@include vui-label();
+	@include vui-field-label();
 }
 .label-inline {
-	@include vui-label-inline();
+	@include vui-field-label-inline();
 }
 .required {
-	@include vui-label-required();
+	@include vui-field-label-required();
 }
 label.radio-label {
 	@include vui-input-radio-label();
