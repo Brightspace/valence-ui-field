@@ -25,11 +25,10 @@
 	cursor: default;
 	display: block;
 	font-size: 0.7rem;
-	line-height: 0.7rem;
+	line-height: if($inline, 2.1rem, 0.7rem);
 	width: 100%;
 
 	@if $inline {
-		margin-top: 0.7rem;
 		text-align: right;
 		[dir='rtl'] & {
 			text-align: left;
@@ -37,7 +36,7 @@
 	} @else {
 		margin-bottom: 0.75rem;
 	}
-	
+
 }
 
 @mixin vui-field-label-required() {
