@@ -19,34 +19,30 @@
 
 }
 
-@mixin _vui-field-label-helper() {
+@mixin vui-field-label($inline: false) {
+
 	color: $vui-color-ferrite;
 	cursor: default;
 	display: block;
 	font-size: 0.7rem;
 	line-height: 0.7rem;
 	width: 100%;
-}
 
-@mixin vui-field-label() {
-	@include _vui-field-label-helper();
-	margin-bottom: 0.75rem;
-}
-
-@mixin vui-field-label-inline() {
-	@include _vui-field-label-helper();
-	margin-top: 0.7rem;
-	text-align: right;
-	[dir='rtl'] & {
-		text-align: left;
+	@if $inline {
+		margin-top: 0.7rem;
+		text-align: right;
+		[dir='rtl'] & {
+			text-align: left;
+		}
+	} @else {
+		margin-bottom: 0.75rem;
 	}
+	
 }
 
 @mixin vui-field-label-required() {
-
 	&:after {
 		content: '*';
 		position: relative;
 	}
-
 }

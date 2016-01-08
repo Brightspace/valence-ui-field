@@ -45,7 +45,7 @@ body {
 	@include vui-field-label();
 }
 .label-inline {
-	@include vui-field-label-inline();
+	@include vui-field-label($inline: true);
 }
 .required {
 	@include vui-field-label-required();
