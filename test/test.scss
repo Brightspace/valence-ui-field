@@ -3,14 +3,13 @@
 @import '../node_modules/vui-input/input.scss';
 @import '../node_modules/vui-input/input-radio.scss';
 @import '../node_modules/vui-input/textarea.scss';
-
-@import 'https://fonts.googleapis.com/css?family=Lato:400,300';
+@import 'bower_components/vui-typography/typography.scss';
 
 html {
 	font-size: 20px;
 }
 body {
-	font-family: 'Lato', sans-serif;
+	@include vui-typography();
 	margin: 1rem;
 }
 
