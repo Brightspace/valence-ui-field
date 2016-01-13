@@ -5,7 +5,7 @@
 }
 
 .vui-field-row fieldset {
-	@include vui-field-row();
+	@include vui-field-row($bottom-margin: false);
 }
 
 .vui-label {
