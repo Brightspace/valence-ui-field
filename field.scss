@@ -1,10 +1,11 @@
+@import 'bower_components/vui-colors/colors.scss';
+@import 'bower_components/vui-typography/small-text.scss';
 
 @mixin vui-field-row($bottom-margin: true) {
 
 	border: none;
 	display: block;
-	min-height: 13px;
-	margin: 0 0 if($bottom-margin, 20px, 0) 0;
+	margin: 0 0 if($bottom-margin, 1.5rem, 0) 0;
 	padding: 0;
 
 	&:after {
@@ -17,4 +18,34 @@
 		display: table;
 	}
 
+}
+
+@mixin vui-field-label($inline: false) {
+
+	$line-height: if($inline, 2.1rem, 0.7rem);
+	$margin-bottom: if($inline, 0, 0.75rem);
+
+	@include vui-typography-small-text(
+		$line-height: $line-height,
+		$margin: 0 0 $margin-bottom 0
+	);
+
+	cursor: default;
+	display: block;
+	width: 100%;
+
+	@if $inline {
+		text-align: right;
+		[dir='rtl'] & {
+			text-align: left;
+		}
+	}
+
+}
+
+@mixin vui-field-label-required() {
+	&:after {
+		content: '*';
+		position: relative;
+	}
 }

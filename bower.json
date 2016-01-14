@@ -1,6 +1,10 @@
 {
   "name": "vui-field",
   "main": "field.scss",
+  "dependencies": {
+    "vui-colors": "^0.2.0",
+    "vui-typography": "^2.0.0"
+  },
   "license": "Apache-2.0",
   "ignore": [
     "test",

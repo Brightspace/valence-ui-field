@@ -1,5 +1,4 @@
 @import "field.scss";
-@import "label.scss";
 
 .vui-field-row {
 	@include vui-field-row();
@@ -10,9 +9,9 @@
 }
 
 .vui-label {
-	@include vui-label();
+	@include vui-field-label();
 }
 
 .vui-required {
-	@include vui-label-required();
+	@include vui-field-label-required();
 }
