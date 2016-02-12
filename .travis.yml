@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - 5.6
+before_script:
+- gem install percy-cli
+after_success:
+- '[ "$TRAVIS_SECURE_ENV_VARS" = "true" ] && npm run perceptual-diff'
 sudo: false
 deploy:
   provider: npm
@@ -10,3 +14,6 @@ deploy:
   on:
     tags: true
     all_branches: true
+env:
+  global:
+    secure: yirvYUS/RoOpQyKtSa4bpWT/5Vi06sJScpbNlG7XlhRYp7fnUG/xM4Jt45kAh/hci8MjWlmZGWaklLnDo/C3B670UKSGldGpe71uGyZboLozK9T/WH2At6aHJWA0PDEOTrqtTxgTgP0yj/r8Hy1dJDWfs1FFXLVL8YpH2YBLtrU=

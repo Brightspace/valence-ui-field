@@ -12,6 +12,7 @@
     "postbuild:sass": "npm run autoprefix",
     "build:sass:test": "node-sass --output-style expanded ./test/test.scss ./test/test.css",
     "postbuild:sass:test": "npm run autoprefix:test",
+    "perceptual-diff": "percy snapshot test/",
     "postinstall": "./node_modules/.bin/bower install",
     "pretest": "npm run build",
     "test": "csslint field.css"
