@@ -4,8 +4,11 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains [SASS mixins](http://sass-lang.com/) and CSS which can be used to
-style fields and labels. It's best used in conjunction with the [VUI inputs](https://github.com/Brightspace/valence-ui-input) and [VUI grid system](https://github.com/Brightspace/valence-ui-grid-system) components.
+This component contains [SASS mixins](http://sass-lang.com/) and CSS which can be used to style fields and labels. It's best used in conjunction with the [VUI inputs](https://github.com/Brightspace/valence-ui-input) and [VUI grid system](https://github.com/Brightspace/valence-ui-grid-system) components.
+
+Here's what fields look like:
+
+![screenshot of fields](/screenshots/overview.png?raw=true)
 
 For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
@@ -83,11 +86,19 @@ If instead you'd like the label to be positioned *beside* the input, pass `true`
 }
 ```
 
+Sample of inline labels:
+
+![screenshot of inline fields](/screenshots/inline.png?raw=true)
+
 **NOTE**: For inline labels, to position the label beside the input, we recommend using a grid system such as the [VUI Grid System](https://github.com/Brightspace/valence-ui-grid-system).
 
 ### Required Fields
 
 To visually call out a field as required, the `vui-field-label-required()` mixin can be applied to the label. It should be applied *in addition to* the `vui-field-label()` mixin.
+
+A required field:
+
+![screenshot of required field](/screenshots/required.png?raw=true)
 
 **Important:** this is merely a *visual* flag. To ensure you meet accessibility requirements, mark up the corresponding input with the HTML `required` and `aria-required` attributes.
 
@@ -107,6 +118,10 @@ SASS:
 ### Fieldsets
 
 When you have more than one related form element (like checkboxes and radio buttons), group them together using the `<fieldset>` and `<legend>` elements. [WCAG: techniques for using fieldset and legend](http://www.w3.org/TR/WCAG-TECHS/H71.html).
+
+For example:
+
+![screenshot of fieldsets](/screenshots/fieldset.png?raw=true)
 
 The field row and label mixins can then be applied to the `<fieldset>` and `<legend>` elements:
 
