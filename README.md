@@ -127,9 +127,9 @@ The field row and label mixins can then be applied to the `<fieldset>` and `<leg
 
 ```html
 <fieldset class="field-row">
-	<legend class="field-label">Do you like apples?</legend>
-	<input type="radio" name="apples" />Yes
-	<input type="radio" name="apples" />No
+	<legend class="field-label">What would you like for lunch?</legend>
+	<input type="radio" name="apples" />hamburger
+	<input type="radio" name="apples" />hot dog
 </fieldset>
 ```
 
