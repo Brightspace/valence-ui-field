@@ -1,6 +1,5 @@
 @import 'node_modules/vui-colors/colors.scss';
 @import 'node_modules/vui-typography/small-text.scss';
-@import 'icons.scss';
 
 @mixin vui-field-row($bottom-margin: true) {
 
@@ -46,9 +45,7 @@
 
 @mixin vui-field-label-required() {
 	&:after {
-		content: $vui-field-asterisk;
+		content: '*';
 		position: relative;
-		left: 0.10rem;
-		bottom: 0.25rem;
 	}
 }
