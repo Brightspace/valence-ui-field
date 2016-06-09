@@ -6,7 +6,7 @@
     "autoprefix": "postcss -c postcss.config.json",
     "autoprefix:test": "postcss -c ./test/postcss.config.json",
     "clean": "rimraf *.css && rimraf ./test/*.css",
-    "prebuild": "npm run clean && imgtoscss -p vui-field- -o icons.scss *.svg",
+    "prebuild": "npm run clean",
     "build": "npm run build:sass && npm run build:sass:test",
     "build:sass": "node-sass --output-style expanded field.css.scss field.css",
     "postbuild:sass": "npm run autoprefix",
@@ -46,7 +46,6 @@
     "postcss-cli": "^2.5.1",
     "rimraf": "^2.5.1",
     "vui-grid-system": "^0.0.1",
-    "vui-input": "^1.5.4",
-    "images-to-variables": "^0.3.0"
+    "vui-input": "^1.5.4"
   }
 }
