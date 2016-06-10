@@ -34,7 +34,7 @@
 	cursor: default;
 	display: block;
 	width: 100%;
-
+	
 	@if $inline {
 		text-align: right;
 		[dir='rtl'] & {
@@ -50,5 +50,8 @@
 		position: relative;
 		left: 0.15rem;
 		bottom: 0.25rem;
+		display: inline-block;
+		width: 0.25rem;
+		height: 0.30rem;
 	}
 }
