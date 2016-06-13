@@ -46,9 +46,12 @@
 
 @mixin vui-field-label-required() {
 	&:after {
-		content: $vui-field-asterisk;
-		position: relative;
-		left: 0.15rem;
 		bottom: 0.25rem;
+		content: $vui-field-asterisk;
+		display: inline-block;
+		height: 0.30rem;
+		left: 0.15rem;
+		position: relative;
+		width: 0.25rem;
 	}
 }
