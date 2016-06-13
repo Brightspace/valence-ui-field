@@ -1,5 +1,4 @@
-@import 'bower_components/vui-colors/colors.scss';
-@import 'bower_components/vui-typography/small-text.scss';
+@import 'bower_components/d2l-colors/d2l-colors.scss';
 @import 'icons.scss';
 
 @mixin vui-field-row($bottom-margin: true) {
@@ -23,18 +22,17 @@
 
 @mixin vui-field-label($inline: false) {
 
-	$line-height: if($inline, 2.1rem, 0.7rem);
-	$margin-bottom: if($inline, 0, 0.75rem);
-
-	@include vui-typography-small-text(
-		$line-height: $line-height,
-		$margin: 0 0 $margin-bottom 0
-	);
-
+	color: $d2l-color-ferrite;
 	cursor: default;
 	display: block;
+	font-family: inherit;
+	font-size: 0.7rem;
+	font-weight: 400;
+	line-height: if($inline, 2.1rem, 0.7rem);
+	letter-spacing: 0.02rem;
+	margin: 0 0 if($inline, 0, 0.75rem) 0;
 	width: 100%;
-	
+
 	@if $inline {
 		text-align: right;
 		[dir='rtl'] & {
@@ -53,5 +51,9 @@
 		display: inline-block;
 		width: 0.25rem;
 		height: 0.30rem;
+	}
+	[dir='rtl'] &:after {
+		left: auto;
+		right: 0.15rem;
 	}
 }

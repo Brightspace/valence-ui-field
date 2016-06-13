@@ -3,14 +3,27 @@
 @import '../node_modules/vui-input/input.scss';
 @import '../node_modules/vui-input/input-radio.scss';
 @import '../node_modules/vui-input/textarea.scss';
-@import 'bower_components/vui-typography/typography.scss';
+@import '../bower_components/d2l-colors/d2l-colors.scss';
+
+@import 'https://fonts.googleapis.com/css?family=Lato:700,400,300';
 
 html {
 	font-size: 20px;
 }
 body {
-	@include vui-typography();
+
+	color: $d2l-color-ferrite;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 330;
+	letter-spacing: 0.015rem;
+	line-height: 1.5;
 	margin: 1rem;
+
+	& p {
+		margin: 1.5rem 0;
+	}
+
 }
 
 .grid-container {
