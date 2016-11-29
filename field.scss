@@ -27,9 +27,8 @@
 	display: block;
 	font-family: inherit;
 	font-size: 0.7rem;
-	font-weight: 400;
-	line-height: if($inline, 2.1rem, 0.7rem);
-	letter-spacing: 0.02rem;
+	font-weight: 700;
+	line-height: if($inline, 2.3rem, 0.7rem);
 	margin: 0 0 if($inline, 0, 0.75rem) 0;
 	width: 100%;
 
