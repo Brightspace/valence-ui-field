@@ -44,7 +44,6 @@
     "postcss-cli": "^2.5.1",
     "rimraf": "^2.5.1",
     "vui-grid-system": "^0.0.1",
-    "vui-input": "^1.5.4",
-    "images-to-variables": "^0.3.0"
+    "vui-input": "^1.5.4"
   }
 }
